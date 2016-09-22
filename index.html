@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>AlisonKeen on GitHub by alisonkeen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>AlisonKeen on GitHub</h1>
+        <p></p>
+
+
+        <p class="view"><a href="https://github.com/alisonkeen">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+        <p>In case anyone's curious what I have been working on... the short answer is 'OpenAustralia SA'. The long answer is as follows...</p>
+
+<h3>
+<a id="thur-22-9-2016" class="anchor" href="#thur-22-9-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 22-9-2016</h3>
+
+<p>While the toddler was in care (morning, 90mins): </p>
+
+<ul>
+<li>looked up why <a href="https://github.com/Henare" class="user-mention">@Henare</a> 's federal Bills scraper is erroring and decided to ignore it for now - the arguments needed to make the URL work are really NOT scraper friendly!!</li>
+<li>Attempted to fix the bugs in my own scraper so it exports CSV that can be imported straight into OpenAustralia's codebase</li>
+<li>discovered that you can't output 'group' as a column in the data item to sqlite3 from ruby. Something doesn't like it. </li>
+<li>created the skeleton of a parser on Morph to build a Mechanize scraper to grab available Hansard transcript dates, and while I was there got distracted. In the SA Hansard search-page source it clearly had a form to subscribe to alerts, but it took five minutes of hunting to find a small "create an alert" link down the bottom of the page. </li>
+</ul>
+
+<p>While he was asleep in the afternoon: </p>
+
+<ul>
+<li>created this, as a way of keeping track of progress </li>
+</ul>
+
+<h3>
+<a id="thurs-159" class="anchor" href="#thurs-159" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thurs 15/9</h3>
+
+<p>Created three more nokogiri scrapers tweaked from the first one which match the input format for OpenAustralia closely enough that I managed to get it to import the list of MPs. Only to discover I needed three lists - a general 'members' one with almost no info, a 'senators' one and a 'representatives' one. </p>
+
+<p>Got them working by emptying the 'ministers' and 'shadow-ministers' csv files - the ministerial portfolios need to be parsed and written into, as well. Given this is auxiliary info, it can wait until after I have a basic grip on Mechanize. The section/line control needed to handle the start/end dates and portfolio info available on the members' pages is a bit fiddly.</p>
+
+<h3>
+<a id="thur-89" class="anchor" href="#thur-89" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 8/9</h3>
+
+<p>Finally plucked up the courage to knuckle down and learn how Morph works, and write my first scraper. You know... I think I might actually really like Morph, partly for the way the output APIs all Just Work... :D</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
