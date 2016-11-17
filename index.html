@@ -26,6 +26,27 @@
         <p>In case anyone's curious what I have been working on... the short answer is 'OpenAustralia SA'. The long answer is as follows...</p>
 
 <h3>
+<a id="thur-17-11-2016" class="anchor" href="#thur-17-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 17-11-2016</h3>
+
+<p>Little bit of childcare. Managed to modify ruby scraper to read API to get only JSON list of <em>all</em> transcript TOC files, then generate html output with correct links so I can manually download missing files. Fixed some HTML/CSS to make the current very-basic auto-generated summaries (from the TOC files) sort of usable. </p>
+
+<p>Tried working out how to get Morph.io to read the JSON response from the API and import the list of Hansard files into sqlite automatically... google failed me. Not sure which scraper engine will let me get raw JSON.</p>
+
+<p>Still haven't gotten it to detect new files properly, or email me when there are files to download.</p>
+
+<h3>
+<a id="fri-sun-11-13-11-2016" class="anchor" href="#fri-sun-11-13-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fri-Sun 11-13-11-2016</h3>
+
+<p>In desperation, tried getting the SA Hansard API working (details: <a href="https://parliament-api-docs.readthedocs.io/en/latest/south-australia/">SA Hansard API Docs</a> ) Only to find that part 1 of 3 returns a JSON index of the filenames for each sitting day in a given year; parts 2 and 3 which supposedly allow downloads of xml files are borked ("Server Error"). This means the API is okay for generating links to manually download files, but can't automatically collect the files you are interested in. To put this into perspective: there are 959 daily XML table-of-contents files, and each of them has between 50 and 100ish fragments. Each fragment also has to be manually downloaded (possibly from a script-generated URL, but who's got time to manually download 4000-ish fragments!?)</p>
+
+<p>Also confirmed that both wget and curl are blocked from downloading the xml files; gave up trying to do it automatically. </p>
+
+<h3>
+<a id="thur-10-11-2016" class="anchor" href="#thur-10-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 10-11-2016</h3>
+
+<p>No childcare. Therefore no progress.</p>
+
+<h3>
 <a id="thur-03-11-2016" class="anchor" href="#thur-03-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 03-11-2016</h3>
 
 <p>AAAAAAAHHHHH I hate Frontpage and Sharepoint like never before... Today I discovered that the SA Hansard 'Daily XML' isn't actually a full transcript, it's just a table of contents which tells you which MPs spoke, but not what they actually <em>said</em>. The actual content is broken into another ten or fifteen fragmented xml files (per day), which are tricky to download, even manually. Hmph. </p>
