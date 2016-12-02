@@ -26,6 +26,31 @@
         <p>In case anyone's curious what I have been working on... the short answer is 'OpenAustralia SA'. The long answer is as follows...</p>
 
 <h3>
+<a id="3-dec" class="anchor" href="#3-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3 Dec</h3>
+
+<p>Had a quick look around at different states to check if there were any who were playing nice(r) than SA. A bit shocked that at least three states <em>only</em> have PDFs up, and no or very basic search. Discovered Ruby's pdf-reader gem that might be worth playing with later... </p>
+
+<p>Created a Config class, re-read ruby syntax guidelines (I swear they make more sense every week). </p>
+
+<p>Started work on trying to get my email_helper module to actually <em>send</em> emails. It'll be a while before there's any sort of list I can add anyone to though</p>
+
+<h3>
+<a id="24-nov-1st-dec-8-dec" class="anchor" href="#24-nov-1st-dec-8-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>24 Nov, 1st Dec, 8 Dec</h3>
+
+<p>(No childcare, booked out until 15 Dec)</p>
+
+<h3>
+<a id="weekend-18-to-20-nov-and-25-to-27-nov" class="anchor" href="#weekend-18-to-20-nov-and-25-to-27-nov" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Weekend 18 to 20 Nov and 25 to 27 Nov</h3>
+
+<p>Working on pulling basic info out of XML TOC files, so at least I can get the gist of whether there is anything of interest from a particular day's transcripts. Have given up trying to merge fragments with tocs to create a parlparse-friendly xml output (for now) - too many fragments to manually download. Maybe in a year or two, if the site is overhauled and becomes friendlier, otherwise write script to either generate links for inserting fragments of interest or manually download fragments for one day at a time. (Hey, if I can manually download 949 TOC's to make them mine-able, surely I can do 200 fragments for the most recent sitting day. Sometimes).</p>
+
+<p>Also improved codebase significantly to create a webhook handler and figured out how to code and call ruby modules, to make code much more reusable. </p>
+
+<p>... Then lost motivation. I can write what needs doing on paper, just can't... write ... the actual... code on the screen</p>
+
+<p>... Spent too much time reading Twitter again instead of getting on with life. It's hard to concentrate on much when a toddler or child interrupts every 10-15 minutes (on average)</p>
+
+<h3>
 <a id="thur-17-11-2016" class="anchor" href="#thur-17-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thur 17-11-2016</h3>
 
 <p>Little bit of childcare. Managed to modify ruby scraper to read API to get only JSON list of <em>all</em> transcript TOC files, then generate html output with correct links so I can manually download missing files. Fixed some HTML/CSS to make the current very-basic auto-generated summaries (from the TOC files) sort of usable. </p>
@@ -37,7 +62,7 @@
 <h3>
 <a id="fri-sun-11-13-11-2016" class="anchor" href="#fri-sun-11-13-11-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fri-Sun 11-13-11-2016</h3>
 
-<p>In desperation, tried getting the SA Hansard API working (details: <a href="https://parliament-api-docs.readthedocs.io/en/latest/south-australia/">SA Hansard API Docs</a> ) Only to find that part 1 of 3 returns a JSON index of the filenames for each sitting day in a given year; parts 2 and 3 which supposedly allow downloads of xml files are borked ("Server Error"). This means the API is okay for generating links to manually download files, but can't automatically collect the files you are interested in. To put this into perspective: there are 959 daily XML table-of-contents files, and each of them has between 50 and 100ish fragments. Each fragment also has to be manually downloaded (possibly from a script-generated URL, but who's got time to manually download 4000-ish fragments!?)</p>
+<p>In desperation, tried getting the SA Hansard API working (details: <a href="https://parliament-api-docs.readthedocs.io/en/latest/south-australia/">SA Hansard API Docs</a> ) Only to find that part 1 of 3 returns a JSON index of the filenames for each sitting day in a given year; parts 2 and 3 which supposedly allow downloads of xml files are borked ("Server Error"). This means the API is okay for generating links to manually download files, but can't automatically collect the files you are interested in. To put this into perspective: there are 959 daily XML table-of-contents files, and each of them has between 50 and 100ish fragments. Each fragment also has to be manually downloaded (possibly from a script-generated URL, but who's got time to manually download 40,000-ish fragments!?)</p>
 
 <p>Also confirmed that both wget and curl are blocked from downloading the xml files; gave up trying to do it automatically. </p>
 
