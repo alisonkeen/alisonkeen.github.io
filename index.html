@@ -23,7 +23,7 @@
 
       </header>
       <section>
-        <p>In case anyone's curious what I have been working on... the short answer is 'OpenAustralia SA'. The long answer is as follows...</p>
+        <p>In case anyone's curious what I have been working on... The long answer is as follows...</p>
 
 <h3>
 <a id="3-dec" class="anchor" href="#3-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3 Dec</h3>
@@ -32,7 +32,13 @@
 
 <p>Created a Config class, re-read ruby syntax guidelines (I swear they make more sense every week). </p>
 
-<p>Started work on trying to get my email_helper module to actually <em>send</em> emails. It'll be a while before there's any sort of list I can add anyone to though</p>
+<p>Set up a cronjob on local server to run scrapers (for now). </p>
+
+<p>Sent my first email using Cuttlefish.io YAYY!!!!! now to fork <a href="https://github.com/mlandauer" class="user-mention">@mlandauer</a>'s cuttlefish repo and add some docs on what code works from ruby-2.3 to actually talk to it (hint: needs start_tls_auto called before start). If you want to see what the code looks like, have a look at email_helper.rb . </p>
+
+<p>It'll be a while before there's any sort of list I can add anyone to though... There's no backend database code at all, the current generated summaries are just precompiled flat-files. </p>
+
+<p>The summary php files are only php so I can be lazy and include page formatting (header,footer) without needing to add whole html blocks manually every time. I still see them as a precurser to being able to generate a properly-formated parlparse xml output - the generate_summary code is currently <em>very</em> basic and doesn't traverse the tree at all. </p>
 
 <h3>
 <a id="24-nov-1st-dec-8-dec" class="anchor" href="#24-nov-1st-dec-8-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>24 Nov, 1st Dec, 8 Dec</h3>
