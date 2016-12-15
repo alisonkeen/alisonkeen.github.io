@@ -26,6 +26,32 @@
         <p>In case anyone's curious what I have been working on, The long answer is as follows...</p>
 
 <h3>
+<a id="thurs-15-dec" class="anchor" href="#thurs-15-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thurs 15 Dec</h3>
+
+<p>few hours childcare, but because my older child is home from school, got essentially nothing done. 
+Decided to try installing OpenAustralia dev environment using Vagrant. 
+Attempt #1: </p>
+
+<ul>
+<li>Tried on VPS: I do most dev on VPS to avoid installing random stuff and bricking my laptop, because if my laptop dies, and it takes days or weeks to resurrect, I am <em>stuck</em>. I can kill and replace a VPS in minutes. </li>
+<li>Discovered that the 'vagrant up' script needs VirtualBox. Ohhh.... so it fires up a virtual machine with a GUI, not a command-line thing like docker. Right. Uninstalled vagrant from (now broken) main VPS. </li>
+</ul>
+
+<p>Attempt #2: </p>
+
+<ul>
+<li>Attempted to install Vagrant on local machine. Chucked errors over invalid CUPS install (we don't own a printer; I don't know what this has to do with anything). </li>
+<li>Finally solved CUPS issues. Discovered I still need to install something to run VMware image. </li>
+<li>Attempted to install VirtualBox; it attempted to brick my computer by turning off SecureBoot (needed for Windows dual-boot, which I would like to still work). </li>
+<li>According to <a href="https://askubuntu.com/questions/760671/could-not-load-vboxdrv-after-upgrade-to-ubuntu-16-04-and-i-want-to-keep-secur">Ask Ubuntu</a>, I need to sign the VirtualBox drivers so they work on my machine. I do <em>not</em> have time for this @#$^^. </li>
+</ul>
+
+<h3>
+<a id="weekend-8-10-dec" class="anchor" href="#weekend-8-10-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Weekend 8-10 Dec</h3>
+
+<p>Tried writing up Cuttlefish how-to but got stuck. Needs to be in Rails friendly syntax. Problem A: I don't speak Rails. Problem B: I can figure out how to install rails, but no idea what the hell you do next, because unlike Apache, it doesn't appear to have a nice simple document-root location where you just load files from.... I give up. For now, anyway.</p>
+
+<h3>
 <a id="sat-3-dec" class="anchor" href="#sat-3-dec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sat 3 Dec</h3>
 
 <p>Had a quick look around at different states to check if there were any who were playing nice(r) than SA. A bit shocked that at least three states <em>only</em> have PDFs up, and no or very basic search. Discovered Ruby's pdf-reader gem that might be worth playing with later... </p>
